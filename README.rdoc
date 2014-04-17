@@ -1,1 +1,4 @@
 == README
+
+- Creates a person and pushed to highrise via rd_highrise_api gem
+- You'll need an api key, url to your highrisehq, and person parameters.
