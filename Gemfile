@@ -16,7 +16,7 @@ gem 'bcrypt', '~> 3.1.7'
 gem 'thin'
 gem 'slim-rails'
 
-gem 'rd_highrise_api', path: '../rd_highrise_api'
+gem 'rd_highrise_api' #, path: '../rd_highrise_api'
 
 group :develoment, :test do
   gem 'rspec-rails'
