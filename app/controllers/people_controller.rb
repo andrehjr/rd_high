@@ -22,6 +22,6 @@ class PeopleController < ApplicationController
     params.require(:person).permit(:url, :first_name, :last_name,
                                    :title, :background, :"linkedin-url",
                                    :phone_number, :email_address,
-                                   :company_name)
+                                   :company_name, :web_address)
   end
 end
