@@ -5,7 +5,7 @@
   div
     = label_tag :url, "Url:"
     = text_field_tag :url, '', placeholder: 'https://andrehjr.highrisehq.com'
-  - %w(first_name last_name title background linkedin-url).each do |element|
+  - %w(first_name last_name title background linkedin-url company_name phone_number email_address).each do |element|
     div
       = label_tag "person[#{element}]", "#{element.humanize}:"
       = text_field_tag "person[#{element}]"

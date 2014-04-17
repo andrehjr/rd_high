@@ -89,7 +89,7 @@ GEM
       thor (>= 0.18.1, < 2.0)
     raindrops (0.13.0)
     rake (10.3.0)
-    rd_highrise_api (0.0.1)
+    rd_highrise_api (0.0.2)
       faraday
       nokogiri
     rdoc (4.1.1)

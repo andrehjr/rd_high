@@ -4,6 +4,7 @@ class PeopleController < ApplicationController
 
   def create
     people = RdHighriseApi::People.new(params[:url], params[:api_key])
+
     response = people.create(person_params)
     if response[:status] == 201
       @people = people.all
@@ -18,6 +19,9 @@ class PeopleController < ApplicationController
   end
 
   def person_params
-    params.require(:person).permit(:url, :first_name, :last_name, :title, :background, :"linkedin-url")
+    params.require(:person).permit(:url, :first_name, :last_name,
+                                   :title, :background, :"linkedin-url",
+                                   :phone_number, :email_address,
+                                   :company_name)
   end
 end
