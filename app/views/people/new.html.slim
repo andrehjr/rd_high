@@ -1,0 +1,6 @@
+= form_tag 'user'
+  - %w(url api_key first_name last_name title background linkedin-url).each do |element|
+    div
+      = label_tag "#{element}:"
+      = text_field_tag element
+  = submit_tag t('send')
