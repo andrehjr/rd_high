@@ -15,6 +15,7 @@ gem 'spring', group: :development
 gem 'bcrypt', '~> 3.1.7'
 gem 'thin'
 gem 'slim-rails'
+gem 'formtastic'
 
 group :develoment, :test do
   gem 'rspec-rails'
