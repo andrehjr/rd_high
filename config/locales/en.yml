@@ -1,2 +1,4 @@
 en:
+  created_with_success: Person created with success!
+  invalid_credentials: Invalid credentials
   send: Send!

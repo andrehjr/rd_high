@@ -1,6 +1,12 @@
-= form_tag 'user'
-  - %w(url api_key first_name last_name title background linkedin-url).each do |element|
+= form_tag 'people'
+  div
+    = label_tag :api_key, "API Key:"
+    = text_field_tag :api_key
+  div
+    = label_tag :url, "Url:"
+    = text_field_tag :url, '', placeholder: 'https://andrehjr.highrisehq.com'
+  - %w(first_name last_name title background linkedin-url).each do |element|
     div
-      = label_tag "#{element}:"
-      = text_field_tag element
+      = label_tag "person[#{element}]", "#{element.humanize}:"
+      = text_field_tag "person[#{element}]"
   = submit_tag t('send')
